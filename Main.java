@@ -7,13 +7,12 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         banco = new Banco("Atividade2");
         cliente = new Cliente(null, null);
-            boolean exit = false;
+        boolean exit = false;
         while(!exit){
             System.out.print("ESPM>");
             String input = scan.nextLine().trim().toLowerCase();
 
             if("".equals(input)){
-
             
             }else if("sair".equals(input)){
                 exit = true;
@@ -48,8 +47,10 @@ public class Main {
         }
 
     }
+
     private static void addCartao(Cliente cliente2) {
     }
+
     private static void menu(){
         System.out.println("Banco Sistema de Clientes");
         System.out.println("------------------------");
@@ -65,6 +66,7 @@ public class Main {
         System.out.println();
         System.out.println("sair -> Sair do Sistema");
     }
+
     public static void addConta(Banco banco){
         Scanner scan = new Scanner(System.in);
 
@@ -83,6 +85,7 @@ public class Main {
          c.setSaldo(saldo);
          Banco.addConta(c);
      }
+
     public static void addCliente(Banco banco){
         Scanner scan = new Scanner(System.in);
 
@@ -97,6 +100,7 @@ public class Main {
          c.setCpf(cpf);
          Conta.addCliente(c);
      }
+
     public static void addFuncionario(Banco banco){
         Scanner scan = new Scanner(System.in);
 
@@ -130,6 +134,7 @@ public class Main {
             cc.setTotalFatura(totalFatura);
             cliente.addCartao(cc);
      }
+
      public static void listCliente(Banco banco){
          Conta.getClientes().forEach(c -> System.out.println(c));
      }
