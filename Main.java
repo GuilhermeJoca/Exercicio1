@@ -8,6 +8,7 @@ public class Main {
         banco = new Banco("Atividade2");
         cliente = new Cliente(null, null);
         boolean exit = false;
+
         while(!exit){
             System.out.print("ESPM>");
             String input = scan.nextLine().trim().toLowerCase();
@@ -41,7 +42,7 @@ public class Main {
                 Conta.retornarDados();
             
             } else {
-                System.out.println("O Comando inválido");
+                System.out.println("Comando inválido");
             }
         
         }
