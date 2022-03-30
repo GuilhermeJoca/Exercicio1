@@ -42,7 +42,7 @@ public class Main {
                 Conta.retornarDados();
             
             } else {
-                System.out.println("Comando inválido");
+                System.out.println("O Comando inválido");
             }
         
         }
@@ -68,13 +68,13 @@ public class Main {
     public static void addConta(Banco banco){
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Número da Conta: ");
+        System.out.print("Número da Conta é: ");
          int numero = scan.nextInt();
 
-        System.out.print("Saldo da Conta: ");
+        System.out.print("Saldo da Conta é: ");
          double saldo = scan.nextDouble();
 
-        System.out.println("Limite da Conta: ");
+        System.out.println("Limite da Conta é: ");
         double limite = scan.nextDouble();
 
          Conta c = new Conta();
